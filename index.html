@@ -8,7 +8,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 
 <style>
-/* --- DESIGN SYSTEM (UNCHANGED) --- */
+/* --- DESIGN SYSTEM --- */
 :root {
     --bg-color: #f4f4f4;
     --card-bg: #ffffff;
@@ -60,7 +60,14 @@ header::after {
 }
 
 header h1 { font-size: 3.5rem; margin-bottom: 10px; }
-header p { font-size: 1.2rem; opacity: 0.8; }
+
+/* SUBTITLE: Double size and bold */
+header p { 
+    font-size: 2.4rem; 
+    font-weight: 700; 
+    opacity: 0.9; 
+    margin-top: 10px;
+}
 
 /* NAVIGATION */
 nav {
@@ -136,13 +143,14 @@ h2 {
 
 .char-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 25px;
 }
 
 @media (max-width: 768px) {
     .content-grid { grid-template-columns: 1fr; }
     header h1 { font-size: 2.5rem; }
+    header p { font-size: 1.5rem; }
     .section { padding: 30px; }
 }
 
@@ -240,6 +248,7 @@ footer { background-color: #111; color: #666; text-align: center; padding: 50px 
         <li><a href="#plot">Summary</a></li>
         <li><a href="#characters">People</a></li>
         <li><a href="#themes">Topics</a></li>
+        <li><a href="#sequel">Next Book</a></li>
         <li><a href="#quiz">Quiz</a></li>
     </ul>
 </nav>
@@ -264,13 +273,13 @@ footer { background-color: #111; color: #666; text-align: center; padding: 50px 
         <h2>02. Summary</h2>
         
         <h3>The Problem</h3>
-        <p><strong>Justyce McAllister</strong> is 17 years old. He is very smart and wants to go to Yale University. One night, he helps his ex-girlfriend. A police officer sees him. The officer arrests Justyce violently because he is Black. Justyce did nothing wrong.</p>
+        <p><strong>Justyce McAllister</strong> is 17 years old. He is very smart and wants to go to Yale University. One night, he helps his ex-girlfriend because she is in trouble. A police officer sees him and thinks he is doing something bad. The officer arrests Justyce violently because he is Black. This event makes Justyce very sad and afraid of the world.</p>
 
         <h3>The Letters</h3>
-        <p>Justyce is angry and confused. He starts writing letters to <strong>Dr. Martin Luther King Jr.</strong> in his diary. He tries to be peaceful like Dr. King. But it is hard because some people at school are racist.</p>
+        <p>Justyce is angry and confused about how he was treated. He starts writing letters to <strong>Dr. Martin Luther King Jr.</strong> in his diary. He wants to know if being peaceful still works today. He tries to be a good person every day. However, it is very hard because students at school say mean things about him. He feels like he does not belong anywhere anymore.</p>
 
         <h3>The Tragedy</h3>
-        <p>Later, Justyce and his best friend Manny are driving. A white man gets angry about their loud music. The man shoots a gun. This tragic event changes Justyce's life forever.</p>
+        <p>Later, Justyce and his best friend Manny are driving in a car. They are happy and playing loud music. A white man in another car gets very angry about the music. The man shouts mean words and then shoots a gun at them. Manny is killed, and Justyce is hurt very badly. This tragic event changes Justyce's life and his view of justice forever.</p>
     </section>
 
     <section class="section" id="characters">
@@ -279,22 +288,32 @@ footer { background-color: #111; color: #666; text-align: center; padding: 50px 
             
             <div class="char-card">
                 <h3>Justyce</h3>
-                <p>The main character. He is smart and brave. He feels caught between two worlds.</p>
+                <p>The main character. He is smart, brave, and wants to be a leader. He writes letters to Dr. King.</p>
             </div>
 
             <div class="char-card">
                 <h3>Manny</h3>
-                <p>Justyce’s best friend. He is rich. He tries to ignore racism to have an easy life.</p>
+                <p>Justyce’s best friend. He comes from a rich family. He learns that money cannot protect him from racism.</p>
             </div>
 
             <div class="char-card">
                 <h3>SJ</h3>
-                <p>She is Justyce’s friend and debate partner. She is kind and supports him.</p>
+                <p>She is Justyce’s debate partner. She is very smart and kind. She helps Justyce understand his feelings.</p>
             </div>
 
             <div class="char-card">
                 <h3>Jared</h3>
-                <p>A classmate. At first, he is not nice. He makes jokes and does not understand racism.</p>
+                <p>A white classmate of Justyce. He says racist things at the start. Later, he starts to realize he was wrong.</p>
+            </div>
+
+            <div class="char-card">
+                <h3>Quan</h3>
+                <p>Manny's cousin who is in prison. He shows a different side of life. He talks to Justyce about the system.</p>
+            </div>
+
+            <div class="char-card">
+                <h3>Mr. Rivers</h3>
+                <p>Manny's father. He is a successful man. He tries to help the boys but also feels the pain of racism.</p>
             </div>
 
         </div>
@@ -305,17 +324,29 @@ footer { background-color: #111; color: #666; text-align: center; padding: 50px 
         <div class="content-grid">
             <div>
                 <h4>Racism</h4>
-                <p>The book shows how people are treated badly because of their skin color. It talks about unfair police actions.</p>
+                <p>The book shows how people are treated badly because of skin color. It talks about unfair police actions in the streets. People often judge Justyce before they even know him. This makes life very difficult for young Black men today.</p>
             </div>
             <div>
                 <h4>Identity</h4>
-                <p>Justyce asks: "Who am I?" He tries to find his place in a world that judges him.</p>
+                <p>Justyce asks: "Who am I?" He feels too "Black" for his white school. He feels too "white" for his old neighborhood. He tries to find his own way to be a man in a world that is often unfair.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="sequel">
+        <h2>05. The Sequel: Dear Justyce</h2>
+        <div class="content-grid">
+            <div>
+                <p>Nic Stone wrote a second book called <strong>Dear Justyce</strong>. This book is about <strong>Quan</strong>, who is Manny's cousin. Quan is in prison for a crime he did not really do. He writes letters to Justyce to explain his hard life.</p>
+            </div>
+            <div>
+                <p>This story shows how the legal system is very hard for young Black men. It tells us why some boys end up in gangs. It is a very emotional story about friendship and support. You should read it after the first book!</p>
             </div>
         </div>
     </section>
 
     <section class="section" id="quiz">
-        <h2>05. Quiz</h2>
+        <h2>06. Quiz</h2>
         <div class="quiz-container" id="quiz-container">
             <div class="quiz-progress" id="progress-text">Question 1 of 5</div>
             <div class="question-box" id="question-text">Loading...</div>
@@ -348,34 +379,22 @@ footer { background-color: #111; color: #666; text-align: center; padding: 50px 
 </div>
 
 <script>
-    /* QUIZ DATA (Simplified English) */
-    const quizData = [
-        {
-            q: "Where is the author Nic Stone from?",
-            options: ["New York", "Atlanta", "London", "Paris"],
-            correct: 1
-        },
-        {
-            q: "Who does Justyce write letters to?",
-            options: ["Dr. Martin Luther King Jr.", "His dad", "The President", "His teacher"],
-            correct: 0
-        },
-        {
-            q: "Who is Justyce's best friend?",
-            options: ["Jared", "SJ", "Manny", "Quan"],
-            correct: 2
-        },
-        {
-            q: "Which university does Justyce want to go to?",
-            options: ["Harvard", "Yale", "Stanford", "Oxford"],
-            correct: 1
-        },
-        {
-            q: "What is the main problem in the book?",
-            options: ["Bad grades", "Racism and Injustice", "Family problems", "Sports"],
-            correct: 1
-        }
+    /* QUIZ DATA */
+    const allQuizData = [
+        { q: "Where is the author Nic Stone from?", options: ["New York", "Atlanta", "London", "Paris"], correct: 1 },
+        { q: "Who does Justyce write letters to?", options: ["Dr. Martin Luther King Jr.", "His dad", "The President", "His teacher"], correct: 0 },
+        { q: "Who is Justyce's best friend?", options: ["Jared", "SJ", "Manny", "Quan"], correct: 2 },
+        { q: "Which university does Justyce want to go to?", options: ["Harvard", "Yale", "Stanford", "Oxford"], correct: 1 },
+        { q: "What is the main problem in the book?", options: ["Bad grades", "Racism and Injustice", "Family problems", "Sports"], correct: 1 },
+        { q: "What is the name of the second book?", options: ["Dear Manny", "Dear Justyce", "Dear Martin 2", "Dear King"], correct: 1 },
+        { q: "Who is the main person in the second book?", options: ["Justyce", "Manny", "Quan", "SJ"], correct: 2 },
+        { q: "What causes the tragedy in the car?", options: ["Loud music", "Fast driving", "A stolen car", "A flat tire"], correct: 0 },
+        { q: "In what year was Dear Martin written?", options: ["2015", "2017", "2020", "2022"], correct: 1 },
+        { q: "What is SJ's role in the book?", options: ["Justyce's sister", "Justyce's debate partner", "Manny's girlfriend", "A police officer"], correct: 1 }
     ];
+
+    // Pick 5 random questions
+    let quizData = allQuizData.sort(() => 0.5 - Math.random()).slice(0, 5);
 
     let currentQuestion = 0;
     let score = 0;
@@ -446,19 +465,9 @@ footer { background-color: #111; color: #666; text-align: center; padding: 50px 
 
         setTimeout(() => {
             let reply = "I don't know. Ask about Justyce or the Author.";
-            
-            if (txt.includes("author") || txt.includes("nic")) {
-                reply = "Nic Stone is the author. She is from Atlanta.";
-            } else if (txt.includes("summary") || txt.includes("book")) {
-                reply = "The book is about Justyce. He faces racism and writes to Dr. King.";
-            } else if (txt.includes("justyce")) {
-                reply = "Justyce is the main character. He is smart and wants to go to Yale.";
-            } else if (txt.includes("manny")) {
-                reply = "Manny is Justyce's rich best friend.";
-            } else if (txt.includes("hello") || txt.includes("hi")) {
-                reply = "Hello! Ask me a question.";
-            }
-
+            if (txt.includes("author")) reply = "Nic Stone is the author.";
+            else if (txt.includes("justyce")) reply = "Justyce is the main character.";
+            else if (txt.includes("hello")) reply = "Hello! How can I help?";
             addMsg(reply, "msg-bot");
         }, 500);
     }
